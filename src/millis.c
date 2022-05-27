@@ -29,7 +29,6 @@ void millis_init()
 }
 
 #ifdef MILLIS_ALT_NAME
-#warning Overriding millis function name
 uint32_t millisAlt()
 #else
 uint32_t millis()
