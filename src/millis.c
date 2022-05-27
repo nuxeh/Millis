@@ -28,7 +28,7 @@ void millis_init()
 	OCIE_REG |= OCIE_BIT_MSK;
 }
 
-#ifdef MILLIS_FN_NAME
+#ifdef MILLIS_ALT_NAME
 #warning Overriding millis function name
 uint32_t millisAlt();
 #else
