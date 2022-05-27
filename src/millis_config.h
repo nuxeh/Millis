@@ -55,7 +55,7 @@
 #define CTC_BIT_MSK			_BV(WGM01)
 #define PRESCALER_REG		TCCR0B
 #define PRESCALER_BITS_MSK	_BV(CS00) | _BV(CS01)
-#define PRESCALER			64
+#define PRESCALER			8
 #define OCREG				OCR0A
 #define OCIE_REG			TIMSK
 #define	OCIE_BIT_MSK		_BV(OCIE0A)
