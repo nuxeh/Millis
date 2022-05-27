@@ -21,7 +21,9 @@
 	and assign it to the MILLIS_TC_NUM macro.
 	Timer/Counter0 -> 0, Timer/Counter1 -> 1
 */
+#ifndef MILLIS_TC_NUM
 #define MILLIS_TC_NUM 0
+#endif
 
 #if defined(__AVR_ATtiny84A__)
 #if MILLIS_TC_NUM == 0
