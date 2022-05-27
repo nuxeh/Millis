@@ -35,7 +35,11 @@ extern "C"
 #include <avr/io.h>
 
 void millis_init();
+#ifdef MILLIS_FN_NAME
+uint32_t millisAlt();
+#else
 uint32_t millis();
+#endif
 void resetMillis();
 
 #ifdef __cplusplus
